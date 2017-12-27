@@ -1,0 +1,7 @@
+.svg-icons{
+  display: block;
+
+  &--steps{
+    margin: 0 auto;
+  }
+}

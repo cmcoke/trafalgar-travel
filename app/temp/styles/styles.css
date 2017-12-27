@@ -1465,6 +1465,22 @@ a{
   text-decoration: none;
   color: #656566;
 }
+.page-section{
+  padding:  1.2rem 0;
+}
+@media (min-width: 800px){
+.page-section{
+    padding: 4.5rem 0
+}
+  }
+.page-section--steps{
+    margin-top: 0;
+  }
+@media (min-width: 800px){
+.page-section--steps{
+      margin-top: 6rem
+  }
+  }
 .hero{
     position: relative;
 
@@ -1569,4 +1585,123 @@ a{
   }
 .primary-nav__current{
     border-bottom: 1px solid #1768ac;
+  }
+.headline{
+  color: #1768ac;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.3125rem;
+}
+@media (min-width: 800px){
+.headline{
+    font-size: 3.125rem
+}
+  }
+.generic-content p{
+    line-height: 1.65;
+    margin: 0 0 1.8rem 0;
+    font-family: 'Raleway', sans-serif;
+  }
+@media (min-width: 530px){
+.generic-content{
+    font-size: 1.125rem
+
+
+}
+  }
+.generic-content--title{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #1768ac;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+
+  }
+@media (min-width: 800px){
+.generic-content--title{
+      font-size: 1.0625rem
+
+  }
+  }
+.generic-content--info{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.35;
+    margin-top: -1.0625rem;
+    font-size: 0.875rem;
+
+  }
+@media (min-width: 800px){
+.generic-content--info{
+      font-size: 1.0625rem
+
+  }
+  }
+.icon{
+      background-image: url('/assets/images/sprites/sprite-0a30e201.svg');
+    }
+.icon--car {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 41.65366614664587% 0;
+  }
+.icon--cruise {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 0 99.44134078212291%;
+  }
+.icon--facebook {
+    width: 26.7px;
+    height: 26.7px;
+    background-position: 99.97503744383424% 15.318416523235799%;
+  }
+.icon--flight {
+    width: 66.75px;
+    height: 65.75px;
+    background-position: 41.65366614664587% 49.35304990757856%;
+  }
+.icon--instagram {
+    width: 26.7px;
+    height: 26.7px;
+    background-position: 99.97503744383424% 0;
+  }
+.icon--love {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 83.30733229329174% 49.720670391061454%;
+  }
+.icon--map {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 0 0;
+  }
+.icon--plane-ticket {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 41.65366614664587% 99.44134078212291%;
+  }
+.icon--support {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 83.30733229329174% 0;
+  }
+.icon--ticket {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 0 49.720670391061454%;
+  }
+.icon--twitter {
+    width: 26.7px;
+    height: 26.7px;
+    background-position: 99.97503744383424% 30.636833046471597%;
+  }
+.icon--villa {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 83.30733229329174% 99.44134078212291%;
+  }
+.svg-icons{
+  display: block;
+}
+.svg-icons--steps{
+    margin: 0 auto;
   }

@@ -1,0 +1,40 @@
+.generic-content{
+
+  p{
+    line-height: 1.65;
+    margin: 0 0 1.8rem 0;
+    font-family: $font-Raleway;
+  }
+
+  @mixin atSmall{
+    font-size: 1.125rem;
+  }
+
+  &--title{
+    font-family: $font-Raleway;
+    text-transform: uppercase;
+    color: $lightBlue;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+
+    @mixin atMedium{
+      font-size: 1.0625rem;
+    }
+
+  }
+
+  &--info{
+    font-family: $font-Raleway;
+    line-height: 1.35;
+    margin-top: -1.0625rem;
+    font-size: 0.875rem;
+
+    @mixin atMedium{
+      font-size: 1.0625rem;
+    }
+
+  }
+
+
+}

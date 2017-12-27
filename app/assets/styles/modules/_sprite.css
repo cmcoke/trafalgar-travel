@@ -1,0 +1,75 @@
+    .icon{
+      background-image: url('/assets/images/sprites/sprite-0a30e201.svg');
+    }
+
+  .icon--car {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 41.65366614664587% 0;
+  }
+
+  .icon--cruise {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 0 99.44134078212291%;
+  }
+
+  .icon--facebook {
+    width: 26.7px;
+    height: 26.7px;
+    background-position: 99.97503744383424% 15.318416523235799%;
+  }
+
+  .icon--flight {
+    width: 66.75px;
+    height: 65.75px;
+    background-position: 41.65366614664587% 49.35304990757856%;
+  }
+
+  .icon--instagram {
+    width: 26.7px;
+    height: 26.7px;
+    background-position: 99.97503744383424% 0;
+  }
+
+  .icon--love {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 83.30733229329174% 49.720670391061454%;
+  }
+
+  .icon--map {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 0 0;
+  }
+
+  .icon--plane-ticket {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 41.65366614664587% 99.44134078212291%;
+  }
+
+  .icon--support {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 83.30733229329174% 0;
+  }
+
+  .icon--ticket {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 0 49.720670391061454%;
+  }
+
+  .icon--twitter {
+    width: 26.7px;
+    height: 26.7px;
+    background-position: 99.97503744383424% 30.636833046471597%;
+  }
+
+  .icon--villa {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 83.30733229329174% 99.44134078212291%;
+  }
