@@ -1458,6 +1458,13 @@ img{
   max-width: 100%;
   height: auto;
 }
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #656566;
+}
 .hero{
     position: relative;
 
@@ -1468,7 +1475,7 @@ img{
     top: 40%; /*vertical alignment*/
     -webkit-transform: translateY(-40%);
             transform: translateY(-40%); /*vertical alignment*/
-    left: -13%;
+    left: -5%;
     width: 100%; /*horizontal alignment*/
     text-align: center; /*horizontal alignment*/
     color: #fff;
@@ -1497,8 +1504,69 @@ img{
 .hero__text-content{
       top: 30%; /*vertical alignment*/
       left: 8%;
-      -webkit-transform: translateY(-30%);
-              transform: translateY(-30%); /*vertical alignment*/
-      font-size: 11rem
+      -webkit-transform: translateY(-10%);
+              transform: translateY(-10%); /*vertical alignment*/
+      font-size: 9rem
   }
+  }
+.site-header{
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+
+}
+.site-header__content{
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+  }
+.site-header__content h1{
+      font-size: 1.15rem;
+      margin: 0.6875rem auto;
+    }
+@media (min-width: 800px){
+.site-header__content h1{
+        font-size: 2rem;
+        margin: 0
+    }
+  }
+.btn{
+  background-color: #1768ac;
+  color: #fff;
+  padding: .75rem 1.2rem;
+}
+.btn:hover{
+    background-color: #2682CF;
+    -webkit-transition: .5s;
+    transition: .5s;
+    color: #fff;
+  }
+.primary-nav{
+  display: none;
+}
+@media (min-width: 1025px){
+.primary-nav{
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+  }
+.primary-nav li{
+    margin-left: 2.0625rem;
+  }
+.primary-nav a:hover{
+    border-bottom: 1px solid #1768ac;
+  }
+.primary-nav__current{
+    border-bottom: 1px solid #1768ac;
   }

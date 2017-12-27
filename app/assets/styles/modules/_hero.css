@@ -5,7 +5,7 @@
     position: absolute;
     top: 40%; /*vertical alignment*/
     transform: translateY(-40%); /*vertical alignment*/
-    left: -13%;
+    left: -5%;
     width: 100%; /*horizontal alignment*/
     text-align: center; /*horizontal alignment*/
     color: #fff;
@@ -30,8 +30,8 @@
     @mixin atLarge{
       top: 30%; /*vertical alignment*/
       left: 8%;
-      transform: translateY(-30%); /*vertical alignment*/
-      font-size: 11rem;
+      transform: translateY(-10%); /*vertical alignment*/
+      font-size: 9rem;
     }
   }
 
