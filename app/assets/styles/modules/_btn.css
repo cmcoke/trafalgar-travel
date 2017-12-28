@@ -2,6 +2,8 @@
   background-color: $lightBlue;
   color: #fff;
   padding: .75rem 1.2rem;
+  text-transform: uppercase;
+  font-family: $font-Raleway;
 
   &:hover{
     background-color: $lighterBlue;
