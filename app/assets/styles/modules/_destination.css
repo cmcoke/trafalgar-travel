@@ -103,11 +103,11 @@
     font-family: $font-Raleway;
     text-transform: uppercase;
     color: #fff;
+    transition: .3s;
   }
 
   &__explore:hover{
     color: $Orange;
-    transition: .3s;
   }
 
 }
