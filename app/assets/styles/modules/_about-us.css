@@ -1,0 +1,46 @@
+.about-us{
+  position: relative;
+  margin-top: 1rem;
+
+  @mixin atSmall{
+    margin-top: 5rem;
+  }
+
+
+  &__content{
+    background-color: $lighterBlue;
+    padding: 0.125rem;
+    margin-top: -0.875rem;
+
+    @mixin atLarge{
+      margin-top: 0;
+      position: absolute;
+      top:40%;
+      transform: translateY(-21%);
+      right: 13%;
+    }
+
+    h4{
+      font-size: 1.125rem;
+      font-family: $font-Raleway;
+      color: #fff;
+    }
+
+    p{
+      font-size: 0.9375rem;
+      line-height: 1.65;
+      font-family: $font-Raleway;
+      margin-top: -1.875rem;
+      color: #fff;
+
+    }
+  }
+
+
+
+
+
+
+
+
+}
