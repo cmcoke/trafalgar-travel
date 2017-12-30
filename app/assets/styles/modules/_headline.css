@@ -1,9 +1,21 @@
 .headline{
   color: $lightBlue;
   font-family: $font-Raleway;
-  font-size: 1.6875rem;
+  font-size: 1.85rem;
 
-  @mixin atMedium{
-    font-size: 3.125rem;
+  @mixin atSmall{
+    font-size: 2rem;
+  }
+
+  &__center{
+    text-align: center;
+  }
+
+  &__welcome{
+    font-size: 2.5rem;
+
+    @mixin atSmall{
+      font-size: 3.5rem;
+    }
   }
 }

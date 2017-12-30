@@ -1,0 +1,40 @@
+.services{
+  position: relative;
+
+  @mixin atSmall{
+    padding-left: 94px;
+  }
+
+  &__icon{
+    display: block;
+    margin: 0 auto;
+
+    @mixin atSmall{
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &__type{
+    font-family: $font-Raleway;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: .7em;
+    margin-bottom: .8rem;
+    color: $lighterBlue;
+    text-align: center;
+
+    @mixin atSmall{
+      font-size: 1.575rem;
+      margin-top: 1em;
+      text-align: left;
+    }
+  }
+
+  &__text{
+    font-family: $font-Raleway;
+    line-height: 1.65;
+  }
+
+
+}
