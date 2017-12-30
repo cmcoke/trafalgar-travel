@@ -2214,3 +2214,27 @@ http://flickity.metafizzy.co
     font-family: 'Raleway', sans-serif;
     line-height: 1.65;
   }
+.testimonial__heading{
+      font-family: 'Raleway', sans-serif;
+      font-size: 21px;
+      font-weight: 300;
+      color: #dc493a;
+      text-align: center;
+    }
+.testimonial__text{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      max-width: 970px;
+      margin: 0 auto;
+    }
+.testimonial__name{
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+.testimonial__user{
+      border-radius: 50%;
+      display: block;
+      margin: 1rem auto;
+    }
