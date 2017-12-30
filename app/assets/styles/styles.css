@@ -17,3 +17,6 @@
 @import "modules/_card";
 @import "modules/_news";
 @import "modules/_site-footer";
+@import "flickity";
+@import "modules/_flickity-page-dots";
+@import "modules/_carousel";

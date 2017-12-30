@@ -35,3 +35,8 @@ gulp.task('cssInject', ['styles'], function() {
 gulp.task('scriptsRefresh', ['scripts'], function(){
   browserSync.reload();
 });
+
+
+gulp.task('scriptsRefresh', ['scripts'], function(){
+  browserSync.reload();
+});

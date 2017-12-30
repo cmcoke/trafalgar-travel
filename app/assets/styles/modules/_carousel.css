@@ -1,0 +1,55 @@
+.carousel-cell{
+    width: 100%;
+    height: auto;
+    margin-right: 0.625rem;
+    position: relative;
+  }
+
+  .carousel__content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: $font-Lato;
+    color: #fff;
+
+    & h3 {
+      margin-bottom: 0px;
+      font-size: 1.625rem;
+
+      @mixin atMedium{
+        font-size: 1.875rem;
+      }
+
+    }
+
+    & h4{
+      margin-top: 0.3125rem;
+      font-size: 1.75rem;
+
+      @mixin atMedium{
+        font-size: 3.125rem;
+      }
+    }
+
+    & p{
+      margin: 0.625rem;
+      text-transform: uppercase;
+      font-size: 0.9375rem;
+
+      @mixin atMedium{
+        font-size: 1.125rem;
+      }
+    }
+
+    & p a{
+      color: #fff;
+      transition: .3s;
+    }
+
+    & p a:hover{
+      color: $Orange;
+    }
+  }
