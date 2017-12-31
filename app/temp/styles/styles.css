@@ -1465,8 +1465,11 @@ a{
   text-decoration: none;
   color: #656566;
 }
+hr{
+  border-top: 1px solid #E7E7E7;
+}
 .page-section{
-  padding:  1.2rem 0;
+  padding:  2.5rem 0;
 }
 @media (min-width: 800px){
 .page-section{
@@ -2238,3 +2241,41 @@ http://flickity.metafizzy.co
       display: block;
       margin: 1rem auto;
     }
+.destination-grid{
+  -webkit-box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+          box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+
+
+
+
+}
+.destination-grid:hover{
+    -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+            box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+  }
+.destination-grid:hover a{
+    color: #dc493a;
+  }
+.destination-grid__content{
+    font-family: 'Raleway', sans-serif;
+    padding: 12px;
+  }
+.destination-grid h4{
+    font-size: 23px;
+    margin-top: .3em;
+    margin-bottom: 0;
+
+  }
+.destination-grid h6{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: .3em;
+    margin-bottom: 24px;
+    color: #2682CF;
+  }
+.destination-grid__text{
+    margin-top: 22px;
+    line-height: 1.55;
+  }
