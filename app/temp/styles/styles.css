@@ -1488,6 +1488,7 @@ hr{
     position: relative;
 
 
+
 }
 .hero__text-content{
     position: absolute;
@@ -1500,7 +1501,7 @@ hr{
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size: 3.125rem;
+    font-size: 2.7rem;
     text-transform: uppercase;
   }
 @media (min-width: 530px){
@@ -1527,6 +1528,14 @@ hr{
               transform: translateY(-10%); /*vertical alignment*/
       font-size: 9rem
   }
+  }
+.hero__text-content--destination{
+      right: -5%;
+    }
+@media (min-width: 1025px){
+.hero__text-content--destination{
+        right: 3%
+    }
   }
 .site-header{
   position: absolute;
@@ -2278,4 +2287,157 @@ http://flickity.metafizzy.co
 .destination-grid__text{
     margin-top: 22px;
     line-height: 1.55;
+  }
+.tab{
+  font-family: 'Raleway', sans-serif;
+}
+.tab p{
+    line-height: 1.75;
+  }
+.tab h4{
+    font-size: 1.125rem;
+  }
+.tab__nav{
+    background-color: #F6F6F6;
+    margin-top: -0.0625rem;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+.tab__nav li{
+      display:block;
+      border-bottom: 0.0625rem solid #E3E3E3;
+    }
+@media (min-width: 530px){
+.tab__nav li{
+        display: inline-block;
+        border-bottom: none
+    }
+  }
+.tab__nav a{
+      background-color: #fff;
+      color: #2682CF;
+      display: block;
+      border-radius: 0.1875rem 0.1875rem 0 0;
+      padding: 1.125rem;
+      -webkit-transition: .3s;
+      transition: .3s;
+    }
+.tab__nav a:hover{
+      background-color: #dc493a;
+      color: #fff;
+    }
+.tab__nav a.current{
+      background-color: #dc493a;
+      color: #fff;
+    }
+.tab__information-text{
+    margin-top: -2.5rem;
+  }
+@media (min-width: 530px){
+.tab__information-text{
+      margin-top: 0.75rem
+  }
+  }
+@media (min-width: 800px){
+.tab__information-text{
+      margin-top: 0.875rem
+  }
+  }
+@media (min-width: 1025px){
+.tab__information-text{
+      margin-top: 1.25rem
+  }
+  }
+.tab__book-info{
+    background-color: #F6F6F6;
+    height: 12.5rem;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+@media (min-width: 800px){
+.tab__book-info{
+      height: 25rem
+  }
+  }
+.tab__book-info h3{
+      font-size: 1.125rem;
+      margin-bottom: 0;
+    }
+@media (min-width: 800px){
+.tab__book-info h3{
+        font-size: 1.875rem
+    }
+  }
+.tab__book-login{
+    background-color: #1768ac;
+    color: #fff;
+    height: 18.75rem;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+@media (min-width: 800px){
+.tab__book-login{
+      height: 25rem
+  }
+  }
+.tab__register:hover{
+    color: #dc493a;
+  }
+.tab input[type=text], .tab input[type=password]{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    padding: 0.5rem 1.375rem;
+    margin: 0.5rem 0;
+  }
+input[type=button]{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 0.625rem 1.0625rem;
+  margin-top: 0.625rem;
+  border: none;
+  color: #dc493a;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+input[type=button]:hover{
+  background-color: #dc493a;
+  color: #fff;
+}
+/*Google Map*/
+#map{
+  display: none;
+}
+@media (min-width: 800px){
+#map{
+    display: block;
+    height: 700px;
+    width: 100%
+}
   }
