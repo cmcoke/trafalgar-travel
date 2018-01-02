@@ -1,0 +1,17 @@
+.blog{
+  font-family: $font-Raleway;
+
+  &__heading{
+    text-transform: uppercase;
+    color: $lightBlue;
+  }
+
+  &__content{
+    line-height: 2.40;
+  }
+
+  &__read-more{
+    color: $Orange;
+  }
+
+}

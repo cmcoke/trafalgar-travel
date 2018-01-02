@@ -2441,3 +2441,17 @@ input[type=button]:hover{
     width: 100%
 }
   }
+.blog{
+  font-family: 'Raleway', sans-serif;
+
+}
+.blog__heading{
+    text-transform: uppercase;
+    color: #1768ac;
+  }
+.blog__content{
+    line-height: 2.40;
+  }
+.blog__read-more{
+    color: #dc493a;
+  }
