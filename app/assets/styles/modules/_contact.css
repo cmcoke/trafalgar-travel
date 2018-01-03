@@ -1,0 +1,100 @@
+.contact{
+  position: relative;
+  font-family: $font-Raleway;
+
+  &__mail-address{
+    position: static;
+    left: 22%;
+    bottom: 40%;
+    padding: 2.5rem;
+    background-color: rgba($lighterBlue, .9);
+    color: #fff;
+
+    @mixin atMedium{
+      width: 30%;
+      position: absolute;
+    }
+  }
+
+  &__headline{
+    font-family: $font-Raleway;
+    font-size: 1.4375rem;
+
+    @mixin atMedium{
+      font-size: 2.0625rem;
+    }
+  }
+
+  &__text{
+    font-family: $font-Raleway;
+    font-weight: 300;
+  }
+
+  &__updates{
+    background:  #efefef;
+  }
+
+  &__updates-content{
+    text-align: center;
+  }
+
+  &__follow{
+    background-color: $lighterBlue;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__address{
+    margin-left: -0.3125rem;
+
+    & li{
+      margin-top: 0.3125rem;
+    }
+  }
+
+  &__subscribe{
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+
+    @mixin atMedium{
+      width: 40%;
+    }
+  }
+
+  &__textarea{
+    width: 100%;
+    background:  #efefef;
+    font-family: $font-Raleway;
+    resize: vertical;
+  }
+
+  &__message, &__subscribe{
+    font-family: $font-Raleway;
+    padding: 0.6875rem;
+    display: block;
+  }
+
+  &__message{
+    background:#efefef;
+    margin-bottom: 0.75rem;
+    width: 100%;
+
+    @mixin atMedium{
+      width: 70%;
+    }
+  }
+
+  &__textarea, &__message, &__subscribe{
+    border: none;
+  }
+
+  &__textarea:focus, &__message:focus, &__subscribe:focus{
+    border: 0.0625rem solid $lighterBlue;
+    transition: .3s;
+  }
+
+  &__form{
+    margin-top: -2.5rem;
+  }
+}

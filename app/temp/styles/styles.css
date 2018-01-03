@@ -1571,15 +1571,19 @@ hr{
 .btn{
   background-color: #1768ac;
   color: #fff;
-  padding: .75rem 1.2rem;
+  padding: .55rem .5rem;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border: none;
 }
 .btn:hover{
     background-color: #2682CF;
     color: #fff;
+  }
+.btn--contact{
+    margin-top: 22px;
   }
 .primary-nav{
   display: none;
@@ -1664,93 +1668,112 @@ hr{
   }
   }
 .icon{
-      background-image: url('/assets/images/sprites/sprite-896a88b0.svg');
+      background-image: url('/assets/images/sprites/sprite-061ee318.svg');
     }
+.icon--address {
+    width: 27.6px;
+    height: 27.6px;
+    background-position: 35.550113036925396% 33.27894327894328%;
+  }
 .icon--car {
     width: 66.75px;
     height: 66.75px;
-    background-position: 0 55.89559543230016%;
+    background-position: 29.502762430939228% 69.37457044673539%;
   }
 .icon--cruise {
     width: 66.75px;
     height: 66.75px;
-    background-position: 70.16132596685082% 43.556280587275694%;
+    background-position: 59.005524861878456% 69.37457044673539%;
   }
 .icon--expedia {
     width: 91.99px;
     height: 26px;
-    background-position: 0 9.278350515463918%;
+    background-position: 0 0;
   }
 .icon--facebook {
-    width: 26.7px;
-    height: 26.7px;
-    background-position: 94.70146451370634% 34.53181583031557%;
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 29.502762430939228% 99.95876288659794%;
   }
 .icon--flight {
     width: 66.75px;
     height: 65.75px;
-    background-position: 40.658563535911604% 0;
+    background-position: 0 39.06955530216648%;
   }
 .icon--instagram {
-    width: 26.7px;
-    height: 26.7px;
-    background-position: 84.6751783702591% 34.53181583031557%;
-  }
-.icon--love {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 29.502762430939228% 55.89559543230016%;
-  }
-.icon--map {
     width: 66.75px;
     height: 66.75px;
     background-position: 70.16132596685082% 0;
   }
+.icon--love {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 70.16132596685082% 30.584192439862544%;
+  }
+.icon--mail {
+    width: 27.6px;
+    height: 27.6px;
+    background-position: 25.15071590052751% 33.27894327894328%;
+  }
+.icon--map {
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 40.658563535911604% 0;
+  }
 .icon--orbitz {
     width: 91.99px;
     height: 18px;
-    background-position: 0 0;
+    background-position: 0 9.737827715355806%;
   }
 .icon--plane-ticket {
     width: 66.75px;
     height: 66.75px;
-    background-position: 0 99.45187601957586%;
+    background-position: 99.66408839779005% 0;
   }
 .icon--support {
     width: 66.75px;
     height: 66.75px;
-    background-position: 29.502762430939228% 99.45187601957586%;
+    background-position: 99.66408839779005% 30.584192439862544%;
   }
 .icon--ticket {
     width: 66.75px;
     height: 66.75px;
-    background-position: 59.005524861878456% 99.45187601957586%;
+    background-position: 99.66408839779005% 61.16838487972509%;
   }
 .icon--travelocity {
     width: 91.99px;
     height: 27.66px;
-    background-position: 0 30.154933971092856%;
+    background-position: 0 17.098002642418592%;
   }
 .icon--tripadvisor {
     width: 91.99px;
     height: 14px;
-    background-position: 0 21.359223300970875%;
+    background-position: 0 26.44280442804428%;
   }
 .icon--twitter {
-    width: 26.7px;
-    height: 26.7px;
-    background-position: 84.6751783702591% 48.3445421624418%;
+    width: 66.75px;
+    height: 66.75px;
+    background-position: 0 69.37457044673539%;
   }
 .icon--villa {
     width: 66.75px;
     height: 66.75px;
-    background-position: 99.66408839779005% 0;
+    background-position: 0 99.95876288659794%;
   }
 .svg-icons{
   display: block;
+
 }
 .svg-icons--steps{
     margin: 0 auto;
+  }
+.svg-icons__contact-icons{
+    display: inline-block;
+    margin-bottom: -0.4375rem;
+  }
+.svg-icons--social{
+    display: inline-block;
+    margin-left: 1.0625rem;
   }
 .destination{
   position: relative;
@@ -2454,4 +2477,94 @@ input[type=button]:hover{
   }
 .blog__read-more{
     color: #dc493a;
+  }
+.contact{
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+.contact__mail-address{
+    position: static;
+    left: 22%;
+    bottom: 40%;
+    padding: 2.5rem;
+    background-color: rgba(38,130,207, .9);
+    color: #fff;
+  }
+@media (min-width: 800px){
+.contact__mail-address{
+      width: 30%;
+      position: absolute
+  }
+  }
+.contact__headline{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4375rem;
+  }
+@media (min-width: 800px){
+.contact__headline{
+      font-size: 2.0625rem
+  }
+  }
+.contact__text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+  }
+.contact__updates{
+    background:  #efefef;
+  }
+.contact__updates-content{
+    text-align: center;
+  }
+.contact__follow{
+    background-color: #2682CF;
+    color: #fff;
+    text-align: center;
+  }
+.contact__address{
+    margin-left: -0.3125rem;
+  }
+.contact__address li{
+      margin-top: 0.3125rem;
+    }
+.contact__subscribe{
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+  }
+@media (min-width: 800px){
+.contact__subscribe{
+      width: 40%
+  }
+  }
+.contact__textarea{
+    width: 100%;
+    background:  #efefef;
+    font-family: 'Raleway', sans-serif;
+    resize: vertical;
+  }
+.contact__message, .contact__subscribe{
+    font-family: 'Raleway', sans-serif;
+    padding: 0.6875rem;
+    display: block;
+  }
+.contact__message{
+    background:#efefef;
+    margin-bottom: 0.75rem;
+    width: 100%;
+  }
+@media (min-width: 800px){
+.contact__message{
+      width: 70%
+  }
+  }
+.contact__textarea, .contact__message, .contact__subscribe{
+    border: none;
+  }
+.contact__textarea:focus, .contact__message:focus, .contact__subscribe:focus{
+    border: 0.0625rem solid #2682CF;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+.contact__form{
+    margin-top: -2.5rem;
   }

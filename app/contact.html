@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trafalgar Travel</title>
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <script src="/temp/scripts/vendor.js"></script>
+</head>
+
+<body>
+
+  <div class="container-full site-header">
+    <header class="site-header__content">
+      <h1>Trafalgar Travel</h1>
+      <nav>
+        <ul class="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="primary-nav__current">Contact</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="login.html" class="btn">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Google Map & Mail and Address -->
+  <section class="contact">
+    <div id="map"></div>
+    <div class="contact__mail-address">
+      <p><span class="svg-icons svg-icons--steps svg-icons__contact-icons icon icon--mail"></span> hello@trafalgar-travel.com</p>
+      <hr>
+      <h4><span class="svg-icons svg-icons--steps svg-icons__contact-icons icon icon--address"></span> Trafalgar Travel Ltd.</h4>
+      <ul class="contact__address">
+        <li>14 Garelli Avenue</li>
+        <li>Kingston 10</li>
+        <li>Jamaica W.I.</li>
+        <li>(876)-123-4567</li>
+      </ul>
+      <hr>
+    </div>
+  </section>
+
+  <!-- Send Us A Message -->
+  <section class="page-section">
+    <div class="container">
+      <div class="grid">
+        <div class="col-sm-12">
+          <h3 class="contact__headline">Send Us A Message</h3>
+        </div>
+      </div>
+      <div class="grid contact__form">
+        <div class="col-sm-12 col-lg-6">
+          <textarea name="message" rows="12" cols="30" class="contact__textarea"></textarea>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <input type="text" placeholder="Your name" class="contact__message">
+          <input type="email" placeholder="Your email" class="contact__message">
+          <button class="btn btn--contact">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Updates -->
+  <section class="page-section contact__updates">
+    <div class="container">
+      <div class="contact__updates-content">
+        <h3 class="contact__headline">Get Updates</h3>
+        <p class="contact__text">Occasional updates on what we've been up to and special offers.</p>
+        <input type="email" placeholder="Enter your email" class="contact__subscribe">
+        <button class="btn btn--contact">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Follow Us-->
+  <section class="page-section contact__follow">
+    <div class="container">
+      <h3 class="contact__headline">Follow Us</h3>
+      <p class="contact__text">Stay in touch with us via our social media accounts</p>
+      <div class="contact__social-icons">
+        <a href="#"><span class="svg-icons svg-icons--social icon icon--facebook"></a>
+        <a href="#"><span class="svg-icons svg-icons--social icon icon--instagram"></a>
+        <a href="#"><span class="svg-icons svg-icons--social icon icon--twitter"></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="container">
+    <p class="site-footer">Created by C.Coke 2017</p>
+  </footer>
+
+  <script src="/temp/scripts/app.js"></script>
+  <script src="assets/scripts/modules/ContactMap.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQFkkW86js97zE0eqkQtipil-bNufGn0&callback=initMap"></script>
+
+</body>
+
+</html>

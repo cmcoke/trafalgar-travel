@@ -4,4 +4,15 @@
   &--steps{
     margin: 0 auto;
   }
+
+  &__contact-icons{
+    display: inline-block;
+    margin-bottom: -0.4375rem;
+  }
+
+  &--social{
+    display: inline-block;
+    margin-left: 1.0625rem;
+  }
+
 }

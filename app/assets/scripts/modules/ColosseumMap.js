@@ -80,7 +80,7 @@ function  initMap() {
       lng: 12.492231
     },
     map: map,
-    icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
+    icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png'
   });
 
 }

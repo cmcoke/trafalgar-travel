@@ -1,13 +1,18 @@
 .btn{
   background-color: $lightBlue;
   color: #fff;
-  padding: .75rem 1.2rem;
+  padding: .55rem .5rem;
   text-transform: uppercase;
   font-family: $font-Raleway;
   transition: 0.3s;
+  border: none;
 
   &:hover{
     background-color: $lighterBlue;
     color: #fff;
+  }
+
+  &--contact{
+    margin-top: 22px;
   }
 }
