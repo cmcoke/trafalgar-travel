@@ -1,0 +1,55 @@
+.login {
+  position: relative;
+
+  &__sidebar-text {
+    position: absolute;
+    top: 0%;
+    transform: translateY(25%);
+    text-align: center;
+    width: 100%;
+    padding: 0.625rem;
+    font-family: $font-Raleway;
+    color: #fff;
+
+    @mixin atMedium {
+      top: 15%;
+      transform: translateY(20%);
+    }
+
+    @mixin atLarge {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+  &__text {
+    margin-top: -1.875rem;
+    font-size: 1.275rem;
+    font-weight: 300;
+
+    @mixin atMedium {
+      margin-top: 0.75rem;
+      font-size: 2.125rem;
+    }
+  }
+
+  &__headline {
+    font-family: $font-Raleway;
+    font-size: 2.375rem;
+  }
+
+  &__password{
+    font-family: $font-Raleway;
+    margin-left: 22px;
+  }
+
+  &__password:hover{
+    color: $Orange;
+  }
+
+
+}

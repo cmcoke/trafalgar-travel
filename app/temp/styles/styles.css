@@ -1974,6 +1974,9 @@ hr{
   color: #656566;
   text-align: center;
 }
+.site-footer--login{
+    
+  }
 /*! Flickity v2.0.10
 http://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -2629,4 +2632,59 @@ input[type=button]:hover{
   }
 .registration__btn{
     margin-top: 1.375rem;
+  }
+.login {
+  position: relative;
+
+
+}
+.login__sidebar-text {
+    position: absolute;
+    top: 0%;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+    text-align: center;
+    width: 100%;
+    padding: 0.625rem;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+  }
+@media (min-width: 800px){
+.login__sidebar-text {
+      top: 15%;
+      -webkit-transform: translateY(20%);
+              transform: translateY(20%)
+  }
+  }
+@media (min-width: 1025px){
+.login__sidebar-text {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      text-align: center
+  }
+  }
+.login__text {
+    margin-top: -1.875rem;
+    font-size: 1.275rem;
+    font-weight: 300;
+  }
+@media (min-width: 800px){
+.login__text {
+      margin-top: 0.75rem;
+      font-size: 2.125rem
+  }
+  }
+.login__headline {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.375rem;
+  }
+.login__password{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 22px;
+  }
+.login__password:hover{
+    color: #dc493a;
   }
