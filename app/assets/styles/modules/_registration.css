@@ -4,9 +4,12 @@
 
   &__sidebar-text{
     position: absolute;
-    top:0%;
-    transform:none;
-    padding: 0.625rem;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 88px;
     font-family: $font-Raleway;
     color: #fff;
 

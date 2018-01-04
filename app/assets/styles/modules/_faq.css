@@ -1,0 +1,32 @@
+.faq{
+  position: relative;
+
+
+  &__sidebar-text{
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 88px;
+    font-family: $font-Raleway;
+    color: #fff;
+    font-size: 19px;
+
+    @mixin atSmall{
+      top: 40%;
+      font-size: 25px;
+    }
+
+    @mixin atMedium{
+      top: 50%;
+      font-size: 30px
+    }
+  }
+
+  &__contact-link:hover{
+    color:$Orange;
+    transition: .3s;
+  }
+}

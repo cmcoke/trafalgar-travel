@@ -60,77 +60,14 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 7:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _Tabs = __webpack_require__(8);
-
-var _Tabs2 = _interopRequireDefault(_Tabs);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var tabs = new _Tabs2.default();
-
-/***/ }),
-
-/***/ 8:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(9);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Tabs = function () {
-  function Tabs() {
-    _classCallCheck(this, Tabs);
-
-    this.tabContent = (0, _jquery2.default)(".tab__content");
-    this.tabLink = (0, _jquery2.default)(".tab__nav");
-    this.events();
-  }
-
-  _createClass(Tabs, [{
-    key: "events",
-    value: function events() {
-      this.tabContent.hide();
-      this.tabLink.find('a').on('click', function (e) {
-        e.preventDefault();
-        (0, _jquery2.default)(".tab__nav").find(".current").removeClass('current');
-        (0, _jquery2.default)(this).addClass('current');
-        (0, _jquery2.default)(this.hash).show().siblings().hide();
-      }).first().click();
-    }
-  }]);
-
-  return Tabs;
-}();
-
-exports.default = Tabs;
-
-/***/ }),
-
-/***/ 9:
+/******/ ([
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10389,6 +10326,124 @@ return jQuery;
 } );
 
 
-/***/ })
+/***/ }),
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/******/ });
+"use strict";
+
+
+var _Tabs = __webpack_require__(9);
+
+var _Tabs2 = _interopRequireDefault(_Tabs);
+
+var _Accordian = __webpack_require__(10);
+
+var _Accordian2 = _interopRequireDefault(_Accordian);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var tabs = new _Tabs2.default();
+var accordian = new _Accordian2.default();
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(3);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Tabs = function () {
+  function Tabs() {
+    _classCallCheck(this, Tabs);
+
+    this.tabContent = (0, _jquery2.default)(".tab__content");
+    this.tabLink = (0, _jquery2.default)(".tab__nav");
+    this.events();
+  }
+
+  _createClass(Tabs, [{
+    key: "events",
+    value: function events() {
+      this.tabContent.hide();
+      this.tabLink.find('a').on('click', function (e) {
+        e.preventDefault();
+        (0, _jquery2.default)(".tab__nav").find(".current").removeClass('current');
+        (0, _jquery2.default)(this).addClass('current');
+        (0, _jquery2.default)(this.hash).show().siblings().hide();
+      }).first().click();
+    }
+  }]);
+
+  return Tabs;
+}();
+
+exports.default = Tabs;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(3);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Accordian = function () {
+  function Accordian() {
+    _classCallCheck(this, Accordian);
+
+    this.accordian = (0, _jquery2.default)('.accordian');
+    this.events();
+  }
+
+  _createClass(Accordian, [{
+    key: 'events',
+    value: function events() {
+      (0, _jquery2.default)('body').removeClass('jsOff').addClass('jsOn');
+
+      this.accordian.find('dd').hide();
+
+      this.accordian.find('dt').on('click', function () {
+        (0, _jquery2.default)(this).toggleClass('open').next('dd').slideToggle().siblings('dd:visible').slideUp().prev('dt').removeClass('open');
+      });
+    }
+  }]);
+
+  return Accordian;
+}();
+
+exports.default = Accordian;
+
+/***/ })
+/******/ ]);
