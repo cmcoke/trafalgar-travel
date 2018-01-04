@@ -1,0 +1,62 @@
+.registration{
+  position: relative;
+
+
+  &__sidebar-text{
+    position: absolute;
+    top:0%;
+    transform:none;
+    padding: 0.625rem;
+    font-family: $font-Raleway;
+    color: #fff;
+
+    @mixin atMedium{
+      top:2%;
+      transform: translateY(30%);
+    }
+
+    @mixin atLarge{
+      top: 0;
+      transform: translateY(90%);
+    }
+  }
+
+  &__text{
+    line-height: 1.55;
+    margin-top: -0.6875rem;
+    font-size: 0.9375rem;
+
+    @mixin atMedium{
+      margin-top: 0.75rem;
+      font-size: 1.125rem;
+    }
+  }
+
+  &__headline{
+    font-family: $font-Raleway;
+    font-size: 1.375rem;
+  }
+
+  &__form{
+    font-family: $font-Raleway;
+    display: block;
+    width: 100%;
+    margin-top: 3.125rem;
+    padding: 0.625rem;
+
+    @mixin atMedium{
+      width: 70%;
+    }
+  }
+
+  &__form:focus{
+    border: 0.0625rem solid $lighterBlue;
+  }
+
+  &__btn{
+    margin-top: 1.375rem;
+  }
+
+
+
+}
