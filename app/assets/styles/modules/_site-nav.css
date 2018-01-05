@@ -1,0 +1,122 @@
+.site-nav{
+   position: absolute;
+   top: 100%;
+   right: 0;
+   z-index: 1;
+   background-color: #fff;
+   height: 0px;
+   overflow: hidden;
+
+   @mixin atMedium{
+     position: relative;
+     height: auto;
+     background: transparent;
+     float: right;
+   }
+
+  &--open{
+    height: auto;
+  }
+
+  & ul{
+    padding: 0;
+    margin: 0;
+
+    @mixin atMedium{
+      margin-top: 0.3125rem;
+    }
+  }
+
+  & li{
+    border-bottom: 0.0625rem solid #F3F3F3;
+
+    @mixin atMedium{
+      display: inline-block;
+      border: none;
+    }
+  }
+
+  & a{
+    font-family: $font-Raleway;
+    display: block;
+    padding: 2em 4em 2em 1.5em;
+    text-transform: uppercase;
+    transition: 200ms;
+    font-weight: 500;
+
+    @mixin atMedium{
+      padding: 0;
+      margin-left: 1em;
+      font-size: 0.625rem;
+      color: $black;
+    }
+
+    @mixin atLarge{
+      margin-left: 1.6em;
+      font-size: 1rem;
+    }
+  }
+
+  & .login{
+    background-color: $lighterBlue;
+    color: #fff;
+    padding: 1.6875rem;
+    transition: .3s;
+
+    @mixin atMedium{
+      padding: 0.4375rem;
+    }
+  }
+
+  & .login:hover{
+    background-color: $lightBlue;
+    color: #fff;
+  }
+
+  & a:hover,  & .active{
+    color: $Orange;
+  }
+
+  &__menu-toggle{
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    cursor: pointer;
+
+    @mixin atMedium{
+      display: none;
+    }
+  }
+
+  &__hamburger, &__hamburger::before, &__hamburger::after{
+    content: '';
+    display: block;
+    background: $lighterBlue;
+    height:0.1875rem;
+    width: 1.75em;
+    border-radius: 0.1875rem;
+    transition: all ease-in-out 400ms;
+  }
+
+  &__hamburger::before{
+    transform: translateY(-0.375rem);
+  }
+
+  &__hamburger::after{
+    transform: translateY(0.1875rem);
+  }
+
+  .open &__hamburger{
+    transform: rotate(45deg);
+  }
+
+  .open &__hamburger::before{
+    opacity: 0;
+  }
+
+  .open &__hamburger::after{
+    transform: translateY(-0.1875rem) rotate(-90deg);
+  }
+
+}

@@ -1,28 +1,30 @@
-.site-header{
-  position: absolute;
-  z-index: 1;
-  background-color: #fff;
-  border-bottom: 1px solid #E4E4E4;
-  width: 100%;
+.site-header {
+  color: #4F4F4F;
+  padding: 1em 0;
+  position: relative;
+  border-bottom: 0.0625rem solid #E4E4E4;
 
-  &__content{
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+
+  &__logo{
+    float: left;
+    font-size: 1rem;
+    margin: 0;
     font-family: $font-Raleway;
     text-transform: uppercase;
 
-    & h1{
-      font-size: 1.15rem;
-      margin: 0.6875rem auto;
 
-      @mixin atMedium{
-        font-size: 2rem;
-        margin: 0;
-      }
+    @mixin atMedium{
+      font-size: 1.3rem;
+      margin-top: 0.4375rem;
+
     }
   }
+
 
 }

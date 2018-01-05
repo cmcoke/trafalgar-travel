@@ -6,9 +6,9 @@
 @import "base/_global";
 @import "modules/_page-section";
 @import "modules/_hero";
-@import "modules/_site-header";
 @import "modules/_btn";
-@import "modules/_primary-nav";
+@import "modules/_site-header";
+@import "modules/_site-nav";
 @import "modules/_headline";
 @import "modules/_generic-content";
 @import "modules/_sprite";
