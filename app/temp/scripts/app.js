@@ -65,8 +65,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */,
-/* 1 */,
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10326,6 +10325,7 @@ return jQuery;
 
 
 /***/ }),
+/* 2 */,
 /* 3 */,
 /* 4 */,
 /* 5 */,
@@ -10349,11 +10349,21 @@ var _MobileMenu = __webpack_require__(11);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
+var _LoginTab = __webpack_require__(14);
+
+var _LoginTab2 = _interopRequireDefault(_LoginTab);
+
+var _Modal = __webpack_require__(15);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var tabs = new _Tabs2.default();
 var accordian = new _Accordian2.default();
 var mobileMenu = new _MobileMenu2.default();
+var loginTab = new _LoginTab2.default();
+var modal = new _Modal2.default();
 
 /***/ }),
 /* 9 */
@@ -10368,7 +10378,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _jquery = __webpack_require__(2);
+var _jquery = __webpack_require__(1);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -10416,7 +10426,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _jquery = __webpack_require__(2);
+var _jquery = __webpack_require__(1);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -10463,7 +10473,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _jquery = __webpack_require__(2);
+var _jquery = __webpack_require__(1);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -10521,7 +10531,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 	if ( true ) {
 
 		// AMD. Register as an anonymous module.
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(2), __webpack_require__(13) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(1), __webpack_require__(13) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -12148,7 +12158,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 	if ( true ) {
 
 		// AMD. Register as an anonymous module.
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(2) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(1) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -12165,6 +12175,130 @@ return $.ui.version = "1.12.1";
 
 } ) );
 
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(1);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var LoginTab = function () {
+  function LoginTab() {
+    _classCallCheck(this, LoginTab);
+
+    this.modalTab = (0, _jquery2.default)(".modal__tab-content");
+    this.modalTabLink = (0, _jquery2.default)(".modal__tab-nav, .modal__signin");
+    this.events();
+  }
+
+  _createClass(LoginTab, [{
+    key: "events",
+    value: function events() {
+      this.modalTab.hide();
+      this.modalTabLink.find('a').on('click', function (e) {
+        e.preventDefault();
+        (0, _jquery2.default)(".modal__tab-nav").find(".current").removeClass('current');
+        (0, _jquery2.default)(this).addClass('current');
+
+        var newTab = (0, _jquery2.default)(this.hash);
+        var newHeight = newTab.height();
+        var container = (0, _jquery2.default)('.modal__tab-container');
+
+        newTab.siblings(':visible').fadeOut('fast');
+        container.animate({ 'height': newHeight }, 300, function () {
+          newTab.fadeIn('fast');
+        });
+      }).first().click();
+    }
+  }]);
+
+  return LoginTab;
+}();
+
+exports.default = LoginTab;
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(1);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Modal = function () {
+  function Modal() {
+    _classCallCheck(this, Modal);
+
+    this.openModalButton = (0, _jquery2.default)(".open-modal");
+    this.modal = (0, _jquery2.default)(".modal");
+    this.closeModalButton = (0, _jquery2.default)(".modal__close");
+    this.events();
+  }
+
+  _createClass(Modal, [{
+    key: "events",
+    value: function events() {
+      // clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
+
+      // clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
+
+      // pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: "keyPressHandler",
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: "openModal",
+    value: function openModal() {
+      this.modal.addClass("modal--is-visible");
+      return false;
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      this.modal.removeClass("modal--is-visible");
+    }
+  }]);
+
+  return Modal;
+}();
+
+exports.default = Modal;
 
 /***/ })
 /******/ ]);

@@ -1,0 +1,224 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.94);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__form{
+    max-width: 570px;
+    margin: 7% auto;
+  }
+
+  &__tab-container{
+
+  }
+
+  &__tab-content p{
+    font-family: $font-Raleway;
+    line-height: 1.75;
+    margin-bottom: 122px;
+
+    @mixin atSmall{
+      margin-bottom: 71px;
+    }
+  }
+
+  &__tab-nav{
+    margin-left: 7%;
+
+
+    @mixin atSmall{
+      margin-left: 25%;
+    }
+
+    @mixin atMedium{
+      margin-left: 12%;
+    }
+
+    & li {
+      display: inline-block;
+      margin-right: 15px;
+      font-family: $font-Raleway;
+      font-size: 23px;
+
+      @mixin atMedium{
+        margin-right: 60px;
+        font-size: 43px;
+      }
+    }
+
+    & a{
+      transition: .3s;
+    }
+
+    & a.current{
+      color: $lighterBlue;
+    }
+
+    & a:hover{
+      color: $lighterBlue;
+    }
+  }
+
+  &__heading{
+    text-align: center;
+    font-family: $font-Raleway;
+    font-size: 20px;
+    color: #636363;
+    font-weight: 300;
+  }
+
+  & form{
+    margin-top: 53px;
+    margin-left: -10px;
+
+    @mixin atSmall{
+      margin-top: 10px;
+    }
+
+    @mixin atMedium{
+      margin-top:23px;
+      margin-left: 40px;
+    }
+
+    @mixin atLarge{
+      margin-top: 120px;
+      margin-left: 55px;
+    }
+  }
+
+  &__input-form{
+    margin-top: 21px;
+  }
+
+  &__form-input{
+    display: block;
+    font-family: $font-Raleway;
+    margin-bottom: 65px;
+    padding: 10px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    color: $lighterBlue;
+    background: transparent;
+
+    @mixin atSmall{
+      margin-bottom: 36px;
+    }
+
+    @mixin atMedium{
+      margin-bottom: 26px;
+    }
+
+    @mixin atLarge{
+      margin-bottom: 65px;
+    }
+  }
+
+  &__form-input--mobile{
+    margin-top: -25px;
+
+    @mixin atSmall{
+      margin-top: -21px;
+    }
+  }
+
+  &__btn {
+    font-family: $font-Raleway;
+    color: #fff;
+    padding: .5em 2em;
+    background-color: $lighterBlue;
+    border: none;
+    margin-bottom: 33px;
+    transition: .3s;
+    width: 100%;
+
+    @mixin atSmall{
+      width: 120px;
+    }
+  }
+
+  &__btn:hover {
+    background-color: $lightBlue;
+  }
+
+  &__btn--green {
+    display: block;
+    font-family: $font-Raleway;
+    color: #fff;
+    padding: .5em 2em;
+    background-color: #3DCF37;
+    border: none;
+    margin-bottom: 33px;
+    transition: .3s;
+    width: 100%;
+
+    @mixin atSmall{
+      width: 120px;
+    }
+
+  }
+
+  &__btn--green:hover {
+    background-color: #1AA115;
+  }
+
+  &__username-password {
+    font-family: $font-Raleway;
+    font-size: 13px;
+    transition: .3s;
+    display: block;
+    text-align: center;
+    margin-top: 67px;
+
+    @mixin atSmall{
+      text-align: right;
+      margin-top: -57px;
+    }
+
+    @mixin atMedium{
+      display: inline;
+      margin-left: 190px;
+      margin-top: 0;
+      text-align: none;
+    }
+  }
+
+  &__username-password:hover {
+    color: $Orange;
+  }
+
+  &__close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color: $lighterBlue;
+    cursor: pointer;
+
+    &:hover{
+      color:$Orange;
+    }
+  }
+
+
+
+
+}

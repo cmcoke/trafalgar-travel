@@ -17,14 +17,14 @@
       <h1 class="site-header__logo">Trafalgar Travel</h1>
       <nav class="site-nav">
         <ul>
-          <li ><a href="index.html" >Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="destinations.html">Destinations</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="faq.html" class="active">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="registration.html">Registration</a></li>
-          <li><a href="login.html" class="login">Login</a></li>
+          <li><a href="login.html" class="login open-modal">Login</a></li>
         </ul>
       </nav>
       <div class="site-nav__menu-toggle">
@@ -127,14 +127,62 @@
   </section>
 
 
-
-
-
-
-
   <footer class="container">
     <p class="site-footer site-footer--login">Created by C.Coke 2017</p>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal">
+
+    <div class="modal__content container">
+
+      <!-- Sing In & Sign Up Form -->
+      <div class="modal__form modal__form--mobile">
+
+        <!-- Navigation Tab -->
+        <ul class="modal__tab-nav">
+          <li><a href="#signIn">Sign In</a></li>
+          <li><a href="#signUp">Sign Up</a></li>
+        </ul>
+
+        <div class="modal__tab-container">
+          <!-- Sign In -->
+          <div class="modal__tab-content" id="signIn">
+            <h2 class="modal__heading">Hello there! <br> Welcome back to the site</h2>
+            <form action="#" class="modal__signin">
+              <input type="text" placeholder="Username" name="username" class="modal__form-input">
+              <input type="password" placeholder="Password" name="password" class="modal__form-input">
+              <input type="submit" value="Sign In" class="modal__btn">
+              <a href="#forgot" class="modal__username-password">Forgot My Username/Password</a>
+            </form>
+          </div>
+
+          <!-- Sign Up -->
+          <div class="modal__tab-content" id="signUp">
+            <h2 class="modal__heading">Thanks for joining us. <br> We look forward to serve you</h2>
+            <form action="#" class="modal__input-form">
+              <input type="text" placeholder="Username" class="modal__form-input modal__form-input--mobile">
+              <input type="password" placeholder="Password" class="modal__form-input modal__form-input--mobile">
+              <input type="email" placeholder="Email" class="modal__form-input modal__form-input--mobile">
+              <input type="submit" value="Submit" class="modal__btn--green">
+            </form>
+          </div>
+
+          <!-- Forget Usernaem/Password -->
+          <div class="modal__tab-content" id="forgot">
+            <!-- <h2>Password Reset</h2> -->
+            <p>Please enter the email address for your account. A verification code will be sent to you. Once you have received the verification code, you will be able to choose a new password for your account.</p>
+
+            <input type="email" placeholder="Email" class="modal__form-input modal__form-input--mobile">
+            <input type="submit" value="Submit" class="modal__btn">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Close Button-->
+    <div class="modal__close">&times;</div>
+  </div>
 
   <script src="/temp/scripts/app.js"></script>
 </body>

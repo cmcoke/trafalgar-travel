@@ -28,6 +28,6 @@
 @import "modules/_blog";
 @import "modules/_contact";
 @import "modules/_registration";
-@import "modules/_login";
 @import "modules/_faq";
 @import "modules/_accordian";
+@import "modules/_modal";
