@@ -1,32 +1,85 @@
 .faq{
-  position: relative;
-
-
-  &__sidebar-text{
-    position: absolute;
-    top: 20%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 88px;
-    font-family: $font-Raleway;
+    background-color: $darkBlue;
     color: #fff;
-    font-size: 19px;
+    font-family: $font-Raleway;
+    height: 400px;
+
+  &__hero-text{
+    transform: translateY(12%);
 
     @mixin atSmall{
-      top: 40%;
-      font-size: 25px;
+      transform: translateY(65%);
     }
 
     @mixin atMedium{
-      top: 50%;
-      font-size: 30px
+      transform: translateY(80%);
     }
   }
 
-  &__contact-link:hover{
-    color:$Orange;
+  & h1{
+    margin-top: 0;
+  }
+
+  & p{
+    line-height: 1.65;
+  }
+
+  &__right-sidebar{
+    background-color: #ededed;
+    padding: 20px;
+
+    & h4{
+      font-family: $font-Raleway;
+      text-align: center;
+      color: #363636;
+    }
+  }
+
+  &__form-input{
+    display: block;
+    width: 100%;
+    margin-top: 11px;
+    padding: 1em;
+    font-family: $font-Raleway;
+    border: none;
+  }
+
+  &__form-textarea{
+    width: 100%;
+    padding: 1em;
+    margin-top: 11px;
+    font-family: $font-Raleway;
+    border: none;
+    resize: none;
+  }
+
+  &__form-input:focus, &__form-textarea:focus{
+    border: 1px solid $lighterBlue;
     transition: .3s;
   }
+
+  &__form-btn{
+    display: block;
+    border: none;
+    background-color: $lighterBlue;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em 2em;
+    margin-top: 1em;
+    width: 100%;
+    font-family: $font-Raleway;
+    text-transform: uppercase;
+    transition: .3s;
+
+    @mixin atLarge{
+      width: 52%;
+    }
+  }
+
+  &__form-btn:hover{
+    background-color: $lightBlue;
+
+  }
+
+
 }
