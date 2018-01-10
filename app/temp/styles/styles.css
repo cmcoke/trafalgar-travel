@@ -2651,7 +2651,7 @@ input[type=button]:hover{
     width: 100%;
     background:  #efefef;
     font-family: 'Raleway', sans-serif;
-    resize: vertical;
+    resize: none;
   }
 .contact__message, .contact__subscribe{
     font-family: 'Raleway', sans-serif;
@@ -2678,71 +2678,6 @@ input[type=button]:hover{
   }
 .contact__form{
     margin-top: -2.5rem;
-  }
-.registration{
-  position: relative;
-
-
-
-}
-.registration__sidebar-text{
-    position: absolute;
-    top: 20%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 88px;
-    font-family: 'Raleway', sans-serif;
-    color: #fff;
-  }
-@media (min-width: 800px){
-.registration__sidebar-text{
-      top:2%;
-      -webkit-transform: translateY(30%);
-              transform: translateY(30%)
-  }
-  }
-@media (min-width: 1025px){
-.registration__sidebar-text{
-      top: 0;
-      -webkit-transform: translateY(90%);
-              transform: translateY(90%)
-  }
-  }
-.registration__text{
-    line-height: 1.55;
-    margin-top: -0.6875rem;
-    font-size: 0.9375rem;
-  }
-@media (min-width: 800px){
-.registration__text{
-      margin-top: 0.75rem;
-      font-size: 1.125rem
-  }
-  }
-.registration__headline{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.375rem;
-  }
-.registration__form{
-    font-family: 'Raleway', sans-serif;
-    display: block;
-    width: 100%;
-    margin-top: 3.125rem;
-    padding: 0.625rem;
-  }
-@media (min-width: 800px){
-.registration__form{
-      width: 70%
-  }
-  }
-.registration__form:focus{
-    border: 0.0625rem solid #2682CF;
-  }
-.registration__btn{
-    margin-top: 1.375rem;
   }
 .faq{
     background-color: #123E84;
@@ -2872,21 +2807,18 @@ input[type=button]:hover{
   }
 .modal {
   position: fixed;
+  z-index: 5;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 5;
-  background-color: rgba(255, 255, 255, 0.94);
+  background-color: rgba(255,255,255, .94);
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
-
-
-
 
 }
 .modal--is-visible{
@@ -2895,191 +2827,128 @@ input[type=button]:hover{
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-.modal__form{
-    max-width: 570px;
-    margin: 7% auto;
+.modal__inner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
-.modal__tab-container{
-
+.modal__tab-nav{
+    text-align: center;
   }
-.modal__tab-content p{
+.modal__tab-nav li{
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
-    line-height: 1.75;
-    margin-bottom: 122px;
-  }
-@media (min-width: 530px){
-.modal__tab-content p{
-      margin-bottom: 71px
-  }
-  }
-.modal__tab-nav{
-    margin-left: 7%;
-  }
-@media (min-width: 530px){
-.modal__tab-nav{
-      margin-left: 25%
-  }
-  }
-@media (min-width: 800px){
-.modal__tab-nav{
-      margin-left: 12%
-  }
-  }
-.modal__tab-nav li {
-      display: inline-block;
-      margin-right: 15px;
-      font-family: 'Raleway', sans-serif;
-      font-size: 23px;
-    }
-@media (min-width: 800px){
-.modal__tab-nav li {
-        margin-right: 60px;
-        font-size: 43px
-    }
+    font-size: 23px;
+    font-weight: 300;
+    margin-right: 50px;
   }
 .modal__tab-nav a{
-      -webkit-transition: .3s;
-      transition: .3s;
-    }
-.modal__tab-nav a.current{
-      color: #2682CF;
-    }
-.modal__tab-nav a:hover{
-      color: #2682CF;
-    }
+    color:#060606;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+.modal a.current{
+    color: #2682CF;
+  }
+.modal a:hover{
+    color: #2682CF;
+  }
 .modal__heading{
-    text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    color: #636363;
     font-weight: 300;
+    color: #060606;
+    text-align: center;
+  }
+.modal__heading--signup{
+      font-size: 20px;
+    }
+.modal__description{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #060606;
+    line-height: 1.75;
+  }
+.modal__password{
+    max-width: 970px;
+    margin-right: auto;
+    margin-left: auto;
   }
 .modal form{
-    margin-top: 53px;
-    margin-left: -10px;
+    max-width: 970px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
   }
 @media (min-width: 530px){
 .modal form{
-      margin-top: 10px
+      margin-top: 20px
   }
-  }
-@media (min-width: 800px){
-.modal form{
-      margin-top:23px;
-      margin-left: 40px
-  }
-  }
-@media (min-width: 1025px){
-.modal form{
-      margin-top: 120px;
-      margin-left: 55px
-  }
-  }
-.modal__input-form{
-    margin-top: 21px;
   }
 .modal__form-input{
     display: block;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 65px;
-    padding: 10px;
     width: 100%;
+    margin-bottom: 33px;
+    padding: 10px;
     border-top: none;
     border-right: none;
     border-left: none;
+    border-bottom-color: #D5D5D5;
     outline: none;
-    color: #2682CF;
     background: transparent;
   }
-@media (min-width: 530px){
-.modal__form-input{
-      margin-bottom: 36px
-  }
-  }
-@media (min-width: 800px){
-.modal__form-input{
-      margin-bottom: 26px
-  }
-  }
-@media (min-width: 1025px){
-.modal__form-input{
-      margin-bottom: 65px
-  }
-  }
-.modal__form-input--mobile{
-    margin-top: -25px;
-  }
-@media (min-width: 530px){
-.modal__form-input--mobile{
-      margin-top: -21px
-  }
-  }
-.modal__btn {
-    font-family: 'Raleway', sans-serif;
-    color: #fff;
-    padding: .5em 2em;
-    background-color: #2682CF;
-    border: none;
+.modal__form-input--signup{
+      margin-bottom: 18px;
+    }
+.modal__form-btn{
+    display: block;
+    width: 100%;
+    padding: 12px;
     margin-bottom: 33px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background-color: #2682CF;
+    color:#fff;
     -webkit-transition: .3s;
     transition: .3s;
-    width: 100%;
   }
 @media (min-width: 530px){
-.modal__btn {
-      width: 120px
+.modal__form-btn{
+      display: inline;
+      width: 20%
   }
   }
-.modal__btn:hover {
+.modal__form-btn--green{
+      background-color: #3DCF37;
+    }
+.modal__form-btn:hover{
     background-color: #1768ac;
   }
-.modal__btn--green {
-    display: block;
-    font-family: 'Raleway', sans-serif;
-    color: #fff;
-    padding: .5em 2em;
-    background-color: #3DCF37;
-    border: none;
-    margin-bottom: 33px;
-    -webkit-transition: .3s;
-    transition: .3s;
-    width: 100%;
-
+.modal__form-btn--green:hover{
+      background-color: #1AA115;
   }
-@media (min-width: 530px){
-.modal__btn--green {
-      width: 120px
-
-  }
-  }
-.modal__btn--green:hover {
-    background-color: #1AA115;
-  }
-.modal__username-password {
+.modal__username-password{
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
+    text-align: center;
     -webkit-transition: .3s;
     transition: .3s;
-    display: block;
-    text-align: center;
-    margin-top: 67px;
   }
 @media (min-width: 530px){
-.modal__username-password {
-      text-align: right;
-      margin-top: -57px
+.modal__username-password{
+      margin-left: 160px
   }
   }
 @media (min-width: 800px){
-.modal__username-password {
-      display: inline;
-      margin-left: 190px;
-      margin-top: 0;
-      text-align: none
+.modal__username-password{
+      margin-left: 290px
   }
   }
-.modal__username-password:hover {
-    color: #dc493a;
+.modal__username-password:hover{
+    color:#dc493a;
   }
 .modal__close{
     position: absolute;
@@ -3094,5 +2963,165 @@ input[type=button]:hover{
     cursor: pointer;
   }
 .modal__close:hover{
+      color:#dc493a;
+    }
+.registration{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 6;
+  background-color: rgba(255,255,255, .94);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+
+
+
+
+
+
+}
+.registration--is-visible{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+.registration__inner{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+.registration__heading{
+    font-family: 'Raleway', sans-serif;
+    color: #2682CF;
+    font-size: 33px;
+    font-weight: 300;
+    text-align: center;
+  }
+@media (min-width: 530px){
+.registration__heading{
+      font-size: 23px;
+      margin-bottom: 0px
+  }
+  }
+@media (min-width: 800px){
+.registration__heading{
+      font-size: 43px
+  }
+  }
+.registration__description{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #636363;
+    font-weight: 300;
+
+  }
+@media (min-width: 530px){
+.registration__description{
+      font-size: 17px;
+      margin-top: 8px
+
+  }
+  }
+@media (min-width: 800px){
+.registration__description{
+      margin-top: 12px
+
+  }
+  }
+.registration__form{
+    margin-top: 21px;
+    max-width: 770px;
+    margin: 24% auto;
+  }
+@media (min-width: 530px){
+.registration__form{
+      margin: 3% auto
+  }
+  }
+@media (min-width: 800px){
+.registration__form{
+      margin: 5% auto
+  }
+  }
+.registration__form-input{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 55px;
+    padding: 10px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: #D5D5D5;
+    outline: none;
+    background: transparent;
+  }
+@media (min-width: 530px){
+.registration__form-input{
+      margin-bottom: 27px
+  }
+  }
+@media (min-width: 800px){
+.registration__form-input{
+      margin-bottom: 18px;
+      margin-top: -1px
+  }
+  }
+@media (min-width: 1025px){
+.registration__form-input{
+      margin-bottom: 55px
+  }
+  }
+.registration__btn{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding: .5em 2em;
+    background-color: #3DCF37;
+    border: none;
+    margin-bottom: 33px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 100%;
+
+  }
+@media (min-width: 530px){
+.registration__btn{
+      width: 120px;
+      margin-top: -10px
+
+  }
+  }
+@media (min-width: 800px){
+.registration__btn{
+      margin-top: -2px
+
+  }
+  }
+.registration__btn:hover {
+    background-color: #1AA115;
+  }
+.registration__close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    color: #2682CF;
+    cursor: pointer;
+  }
+.registration__close:hover{
       color:#dc493a;
     }

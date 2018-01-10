@@ -1,11 +1,11 @@
 .modal {
   position: fixed;
+  z-index: 5;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 5;
-  background-color: rgba(255, 255, 255, 0.94);
+  background-color: rgba(255,255,255, .94);
   opacity: 0;
   visibility: hidden;
   transform: scale(1.2);
@@ -17,190 +17,139 @@
     transform: scale(1);
   }
 
-  &__form{
-    max-width: 570px;
-    margin: 7% auto;
-  }
-
-  &__tab-container{
-
-  }
-
-  &__tab-content p{
-    font-family: $font-Raleway;
-    line-height: 1.75;
-    margin-bottom: 122px;
-
-    @mixin atSmall{
-      margin-bottom: 71px;
-    }
+  &__inner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__tab-nav{
-    margin-left: 7%;
+    text-align: center;
+  }
+
+  &__tab-nav li{
+    display: inline-block;
+    font-family: $font-Raleway;
+    font-size: 23px;
+    font-weight: 300;
+    margin-right: 50px;
+  }
+
+  &__tab-nav a{
+    color:#060606;
+    transition: .3s;
+  }
+
+  & a.current{
+    color: $lighterBlue;
+  }
+
+  & a:hover{
+    color: $lighterBlue;
+  }
 
 
-    @mixin atSmall{
-      margin-left: 25%;
-    }
+  &__heading{
+    font-family: $font-Raleway;
+    font-weight: 300;
+    color: #060606;
+    text-align: center;
 
-    @mixin atMedium{
-      margin-left: 12%;
-    }
-
-    & li {
-      display: inline-block;
-      margin-right: 15px;
-      font-family: $font-Raleway;
-      font-size: 23px;
-
-      @mixin atMedium{
-        margin-right: 60px;
-        font-size: 43px;
-      }
-    }
-
-    & a{
-      transition: .3s;
-    }
-
-    & a.current{
-      color: $lighterBlue;
-    }
-
-    & a:hover{
-      color: $lighterBlue;
+    &--signup{
+      font-size: 20px;
     }
   }
 
-  &__heading{
-    text-align: center;
+  &__description{
     font-family: $font-Raleway;
-    font-size: 20px;
-    color: #636363;
     font-weight: 300;
+    color: #060606;
+    line-height: 1.75;
+  }
+
+  &__password{
+    max-width: 970px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   & form{
-    margin-top: 53px;
-    margin-left: -10px;
+    max-width: 970px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
 
     @mixin atSmall{
-      margin-top: 10px;
+      margin-top: 20px;
     }
-
-    @mixin atMedium{
-      margin-top:23px;
-      margin-left: 40px;
-    }
-
-    @mixin atLarge{
-      margin-top: 120px;
-      margin-left: 55px;
-    }
-  }
-
-  &__input-form{
-    margin-top: 21px;
   }
 
   &__form-input{
     display: block;
     font-family: $font-Raleway;
-    margin-bottom: 65px;
-    padding: 10px;
     width: 100%;
+    margin-bottom: 33px;
+    padding: 10px;
     border-top: none;
     border-right: none;
     border-left: none;
+    border-bottom-color: #D5D5D5;
     outline: none;
-    color: $lighterBlue;
     background: transparent;
 
-    @mixin atSmall{
-      margin-bottom: 36px;
-    }
-
-    @mixin atMedium{
-      margin-bottom: 26px;
-    }
-
-    @mixin atLarge{
-      margin-bottom: 65px;
+    &--signup{
+      margin-bottom: 18px;
     }
   }
 
-  &__form-input--mobile{
-    margin-top: -25px;
-
-    @mixin atSmall{
-      margin-top: -21px;
-    }
-  }
-
-  &__btn {
-    font-family: $font-Raleway;
-    color: #fff;
-    padding: .5em 2em;
-    background-color: $lighterBlue;
-    border: none;
-    margin-bottom: 33px;
-    transition: .3s;
+  &__form-btn{
+    display: block;
     width: 100%;
+    padding: 12px;
+    margin-bottom: 33px;
+    border: none;
+    font-family: $font-Raleway;
+    text-transform: uppercase;
+    background-color: $lighterBlue;
+    color:#fff;
+    transition: .3s;
 
     @mixin atSmall{
-      width: 120px;
+      display: inline;
+      width: 20%;
+    }
+
+    &--green{
+      background-color: #3DCF37;
     }
   }
 
-  &__btn:hover {
+  &__form-btn:hover{
     background-color: $lightBlue;
   }
 
-  &__btn--green {
-    display: block;
-    font-family: $font-Raleway;
-    color: #fff;
-    padding: .5em 2em;
-    background-color: #3DCF37;
-    border: none;
-    margin-bottom: 33px;
-    transition: .3s;
-    width: 100%;
-
-    @mixin atSmall{
-      width: 120px;
-    }
-
+  &__form-btn--green:hover{
+      background-color: #1AA115;
   }
 
-  &__btn--green:hover {
-    background-color: #1AA115;
-  }
-
-  &__username-password {
+  &__username-password{
     font-family: $font-Raleway;
     font-size: 13px;
-    transition: .3s;
-    display: block;
     text-align: center;
-    margin-top: 67px;
+    transition: .3s;
 
     @mixin atSmall{
-      text-align: right;
-      margin-top: -57px;
+      margin-left: 160px;
     }
 
     @mixin atMedium{
-      display: inline;
-      margin-left: 190px;
-      margin-top: 0;
-      text-align: none;
+      margin-left: 290px;
     }
   }
 
-  &__username-password:hover {
-    color: $Orange;
+  &__username-password:hover{
+    color:$Orange;
   }
 
   &__close{
@@ -217,8 +166,5 @@
       color:$Orange;
     }
   }
-
-
-
 
 }

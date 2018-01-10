@@ -1,64 +1,148 @@
 .registration{
-  position: relative;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 6;
+  background-color: rgba(255,255,255, .94);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
 
+  &--is-visible{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
 
-  &__sidebar-text{
+  &__inner{
     position: absolute;
-    top: 20%;
-    transform: translateY(-50%);
-    left: 0;
     width: 100%;
+    top:50%;
+    transform: translateY(-50%);
+  }
+
+
+  &__heading{
+    font-family: $font-Raleway;
+    color: $lighterBlue;
+    font-size: 33px;
+    font-weight: 300;
     text-align: center;
-    padding-top: 88px;
-    font-family: $font-Raleway;
-    color: #fff;
 
-    @mixin atMedium{
-      top:2%;
-      transform: translateY(30%);
+    @mixin atSmall{
+      font-size: 23px;
+      margin-bottom: 0px;
     }
 
-    @mixin atLarge{
-      top: 0;
-      transform: translateY(90%);
+    @mixin atMedium{
+      font-size: 43px;
     }
   }
 
-  &__text{
-    line-height: 1.55;
-    margin-top: -0.6875rem;
-    font-size: 0.9375rem;
+  &__description{
+    text-align: center;
+    font-family: $font-Raleway;
+    font-size: 20px;
+    color: #636363;
+    font-weight: 300;
+
+    @mixin atSmall{
+      font-size: 17px;
+      margin-top: 8px;
+    }
 
     @mixin atMedium{
-      margin-top: 0.75rem;
-      font-size: 1.125rem;
+      margin-top: 12px;
     }
-  }
 
-  &__headline{
-    font-family: $font-Raleway;
-    font-size: 1.375rem;
   }
 
   &__form{
-    font-family: $font-Raleway;
-    display: block;
-    width: 100%;
-    margin-top: 3.125rem;
-    padding: 0.625rem;
+    margin-top: 21px;
+    max-width: 770px;
+    margin: 24% auto;
+
+    @mixin atSmall{
+      margin: 3% auto;
+    }
 
     @mixin atMedium{
-      width: 70%;
+      margin: 5% auto;
     }
   }
 
-  &__form:focus{
-    border: 0.0625rem solid $lighterBlue;
+  &__form-input{
+    display: block;
+    font-family: $font-Raleway;
+    margin-bottom: 55px;
+    padding: 10px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: #D5D5D5;
+    outline: none;
+    background: transparent;
+
+    @mixin atSmall{
+      margin-bottom: 27px;
+    }
+
+    @mixin atMedium{
+      margin-bottom: 18px;
+      margin-top: -1px;
+    }
+
+    @mixin atLarge{
+      margin-bottom: 55px;
+    }
   }
 
   &__btn{
-    margin-top: 1.375rem;
+    font-family: $font-Raleway;
+    color: #fff;
+    padding: .5em 2em;
+    background-color: #3DCF37;
+    border: none;
+    margin-bottom: 33px;
+    transition: .3s;
+    width: 100%;
+
+    @mixin atSmall{
+      width: 120px;
+      margin-top: -10px;
+    }
+
+    @mixin atMedium{
+      margin-top: -2px;
+    }
+
   }
+
+  &__btn:hover {
+    background-color: #1AA115;
+  }
+
+  &__close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color: $lighterBlue;
+    cursor: pointer;
+
+    &:hover{
+      color:$Orange;
+    }
+  }
+
+
+
 
 
 
