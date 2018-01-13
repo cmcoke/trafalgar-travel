@@ -2415,6 +2415,7 @@ http://flickity.metafizzy.co
   }
 .tab{
   font-family: 'Raleway', sans-serif;
+
 }
 .tab p{
     line-height: 1.75;
@@ -2536,34 +2537,40 @@ http://flickity.metafizzy.co
   }
 .tab__forget{
     color: #fff;
-    margin-left: 15px;
+    margin-right: 12px;
     -webkit-transition: all 300ms;
     transition: all 300ms;
   }
 .tab__forget:hover{
     color: #dc493a;
   }
-.tab input[type=text], .tab input[type=password]{
+.tab__form{
     font-family: 'Raleway', sans-serif;
     width: 100%;
-    padding: 0.5rem 1.375rem;
+    padding: 0.5rem 0.6875rem;
     margin: 0.5rem 0;
+    border: none;
   }
-input[type=button]{
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  background-color: #fff;
-  padding: 0.625rem 1.0625rem;
-  margin-top: 0.625rem;
-  border: none;
-  color: #dc493a;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-input[type=button]:hover{
-  background-color: #dc493a;
-  color: #fff;
-}
+.tab__btn{
+    display:  block;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.625rem;
+    margin-bottom: 12px;
+    border: none;
+    color: #dc493a;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+.tab__btn:hover{
+    background-color: #dc493a;
+    color: #fff;
+  }
 /*Google Map*/
 #map{
   display: none;
@@ -2576,18 +2583,42 @@ input[type=button]:hover{
 }
   }
 .blog{
-  font-family: 'Raleway', sans-serif;
+  font-family:'Raleway', sans-serif;
+  font-weight: 200;
+
 
 }
 .blog__heading{
-    text-transform: uppercase;
+    color: #2682CF;
+  }
+.blog__container {
+    margin-top: 22px;
+  }
+.blog__author{
+    color: #AFAFAF;
+  }
+.blog__topic{
+    font-weight: 300;
     color: #1768ac;
   }
 .blog__content{
-    line-height: 2.40;
+    line-height: 1.75;
+    font-size: 18px;
   }
-.blog__read-more{
+.blog__content strong{
+      font-weight: bold;
+    }
+.blog__btn{
+    color: #656566;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+  }
+.blog__btn:hover{
     color: #dc493a;
+  }
+.blog hr{
+    margin-top:50px;
   }
 .contact{
   position: relative;
@@ -2604,6 +2635,12 @@ input[type=button]:hover{
 @media (min-width: 800px){
 .contact__mail-address{
       width: 30%;
+      position: absolute
+  }
+  }
+@media (min-width: 1025px){
+.contact__mail-address{
+      width: 23%;
       position: absolute
   }
   }
@@ -2860,10 +2897,9 @@ input[type=button]:hover{
     font-weight: 300;
     color: #060606;
     text-align: center;
+    font-size: 18px;
+
   }
-.modal__heading--signup{
-      font-size: 20px;
-    }
 .modal__description{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -2980,11 +3016,6 @@ input[type=button]:hover{
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 
-
-
-
-
-
 }
 .registration--is-visible{
     opacity: 1;
@@ -3002,45 +3033,42 @@ input[type=button]:hover{
 .registration__heading{
     font-family: 'Raleway', sans-serif;
     color: #2682CF;
-    font-size: 33px;
+    font-size: 2.0625rem;
     font-weight: 300;
     text-align: center;
+
   }
 @media (min-width: 530px){
 .registration__heading{
-      font-size: 23px;
+      font-size: 1.4375rem;
       margin-bottom: 0px
-  }
-  }
-@media (min-width: 800px){
-.registration__heading{
-      font-size: 43px
+
   }
   }
 .registration__description{
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #636363;
     font-weight: 300;
 
   }
 @media (min-width: 530px){
 .registration__description{
-      font-size: 17px;
-      margin-top: 8px
+      font-size: 1.0625rem;
+      margin-top: 0.5rem
 
   }
   }
 @media (min-width: 800px){
 .registration__description{
-      margin-top: 12px
+      margin-top: 0.75rem
 
   }
   }
 .registration__form{
-    margin-top: 21px;
-    max-width: 770px;
+    margin-top: 1.3125rem;
+    max-width: 48.125rem;
     margin: 24% auto;
   }
 @media (min-width: 530px){
@@ -3056,8 +3084,8 @@ input[type=button]:hover{
 .registration__form-input{
     display: block;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 55px;
-    padding: 10px;
+    margin-bottom: 3.4375rem;
+    padding: 0.625rem;
     width: 100%;
     border-top: none;
     border-right: none;
@@ -3068,13 +3096,13 @@ input[type=button]:hover{
   }
 @media (min-width: 530px){
 .registration__form-input{
-      margin-bottom: 27px
+      margin-bottom: 1.6875rem
   }
   }
 @media (min-width: 800px){
 .registration__form-input{
-      margin-bottom: 18px;
-      margin-top: -1px
+      margin-bottom: 1.125rem;
+      margin-top: -0.0625rem
   }
   }
 @media (min-width: 1025px){
@@ -3088,7 +3116,7 @@ input[type=button]:hover{
     padding: .5em 2em;
     background-color: #3DCF37;
     border: none;
-    margin-bottom: 33px;
+    margin-bottom: 2.0625rem;
     -webkit-transition: .3s;
     transition: .3s;
     width: 100%;
@@ -3096,14 +3124,14 @@ input[type=button]:hover{
   }
 @media (min-width: 530px){
 .registration__btn{
-      width: 120px;
-      margin-top: -10px
+      width: 7.5rem;
+      margin-top: -0.625rem
 
   }
   }
 @media (min-width: 800px){
 .registration__btn{
-      margin-top: -2px
+      margin-top: -0.125rem
 
   }
   }

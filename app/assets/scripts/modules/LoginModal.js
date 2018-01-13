@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-class Modal{
+class LoginModal{
   constructor(){
     this.openLoginModal = $(".open-modal");
     this.loginModal = $(".modal");
@@ -37,4 +37,4 @@ class Modal{
 
 }
 
-export default Modal;
+export default LoginModal;

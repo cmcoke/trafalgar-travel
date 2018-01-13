@@ -1,17 +1,46 @@
 .blog{
-  font-family: $font-Raleway;
+  font-family:$font-Raleway;
+  font-weight: 200;
 
   &__heading{
-    text-transform: uppercase;
+    color: $lighterBlue;
+  }
+
+  &__container {
+    margin-top: 22px;
+  }
+
+  &__author{
+    color: #AFAFAF;
+  }
+
+  &__topic{
+    font-weight: 300;
     color: $lightBlue;
   }
 
   &__content{
-    line-height: 2.40;
+    line-height: 1.75;
+    font-size: 18px;
+
+    & strong{
+      font-weight: bold;
+    }
   }
 
-  &__read-more{
+  &__btn{
+    color: $black;
+    transition: .3s;
+
+  }
+
+  &__btn:hover{
     color: $Orange;
   }
+
+  & hr{
+    margin-top:50px;
+  }
+
 
 }

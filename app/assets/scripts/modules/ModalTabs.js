@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-class Tabs{
+class ModalTabs{
   constructor(){
     this.tabContent = $(".modal__tab-content");
     this.tabNav = $(".modal__tab-nav, .modal__signin");
@@ -28,4 +28,4 @@ class Tabs{
 
 }
 
-export default Tabs;
+export default ModalTabs;

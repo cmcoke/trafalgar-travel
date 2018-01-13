@@ -109,7 +109,7 @@
 
   &__forget{
     color: #fff;
-    margin-left: 15px;
+    margin-right: 12px;
     transition: all 300ms;
   }
 
@@ -117,29 +117,38 @@
     color: $Orange;
   }
 
-  input[type=text], input[type=password]{
+  &__form{
     font-family: $font-Raleway;
     width: 100%;
-    padding: 0.5rem 1.375rem;
+    padding: 0.5rem 0.6875rem;
     margin: 0.5rem 0;
+    border: none;
   }
+
+  &__btn{
+    display:  block;
+    font-family: $font-Raleway;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.625rem;
+    margin-bottom: 12px;
+    border: none;
+    color: $Orange;
+    transition: .3s;
+  }
+
+  &__btn:hover{
+    background-color: $Orange;
+    color: #fff;
+  }
+
 }
 
-input[type=button]{
-  font-family: $font-Raleway;
-  text-transform: uppercase;
-  background-color: #fff;
-  padding: 0.625rem 1.0625rem;
-  margin-top: 0.625rem;
-  border: none;
-  color: $Orange;
-  transition: .3s;
-}
 
-input[type=button]:hover{
-  background-color: $Orange;
-  color: #fff;
-}
 
 
 

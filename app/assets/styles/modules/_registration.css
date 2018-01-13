@@ -28,41 +28,38 @@
   &__heading{
     font-family: $font-Raleway;
     color: $lighterBlue;
-    font-size: 33px;
+    font-size: 2.0625rem;
     font-weight: 300;
     text-align: center;
 
     @mixin atSmall{
-      font-size: 23px;
+      font-size: 1.4375rem;
       margin-bottom: 0px;
     }
 
-    @mixin atMedium{
-      font-size: 43px;
-    }
   }
 
   &__description{
     text-align: center;
     font-family: $font-Raleway;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #636363;
     font-weight: 300;
 
     @mixin atSmall{
-      font-size: 17px;
-      margin-top: 8px;
+      font-size: 1.0625rem;
+      margin-top: 0.5rem;
     }
 
     @mixin atMedium{
-      margin-top: 12px;
+      margin-top: 0.75rem;
     }
 
   }
 
   &__form{
-    margin-top: 21px;
-    max-width: 770px;
+    margin-top: 1.3125rem;
+    max-width: 48.125rem;
     margin: 24% auto;
 
     @mixin atSmall{
@@ -77,8 +74,8 @@
   &__form-input{
     display: block;
     font-family: $font-Raleway;
-    margin-bottom: 55px;
-    padding: 10px;
+    margin-bottom: 3.4375rem;
+    padding: 0.625rem;
     width: 100%;
     border-top: none;
     border-right: none;
@@ -88,12 +85,12 @@
     background: transparent;
 
     @mixin atSmall{
-      margin-bottom: 27px;
+      margin-bottom: 1.6875rem;
     }
 
     @mixin atMedium{
-      margin-bottom: 18px;
-      margin-top: -1px;
+      margin-bottom: 1.125rem;
+      margin-top: -0.0625rem;
     }
 
     @mixin atLarge{
@@ -107,17 +104,17 @@
     padding: .5em 2em;
     background-color: #3DCF37;
     border: none;
-    margin-bottom: 33px;
+    margin-bottom: 2.0625rem;
     transition: .3s;
     width: 100%;
 
     @mixin atSmall{
-      width: 120px;
-      margin-top: -10px;
+      width: 7.5rem;
+      margin-top: -0.625rem;
     }
 
     @mixin atMedium{
-      margin-top: -2px;
+      margin-top: -0.125rem;
     }
 
   }
@@ -140,10 +137,5 @@
       color:$Orange;
     }
   }
-
-
-
-
-
 
 }

@@ -1,15 +1,17 @@
-import Tabs from './modules/Tabs';
+import ModalTabs from './modules/ModalTabs';
 import Accordian from './modules/Accordian';
 import MobileMenu from './modules/MobileMenu';
+import DestinationTabs from './modules/DestinationTabs';
 import LoginTab from './modules/LoginTab';
-import Modal from './modules/Modal';
+import LoginModal from './modules/LoginModal';
 import RegistrationModal from './modules/RegistrationModal';
 
 
 
-var tabs = new Tabs();
+var tabs = new ModalTabs();
 var accordian = new Accordian();
 var mobileMenu = new MobileMenu();
+var destinationTab = new DestinationTabs();
 var loginTab = new LoginTab();
-var modal = new Modal();
+var loginModal = new LoginModal();
 var registrationModal = new RegistrationModal();
