@@ -6,12 +6,24 @@ svg2png = require('gulp-svg2png');
 
 //configures svgSprite object called 'config' which is responsibly for converting the icons into a sprite
 var config = {
-  mode:{
-    css:{
+  shape:{
+    spacing:{
+      padding:1
+    }
+  },
+  mode: {
+    css: {
+      variables:{
+        replaceSvgWithPng: function(){
+          return function(sprite, render){
+            return render(sprite).split('.svg').join('.png');
+          }
+        }
+      },
       sprite: 'sprite.svg',
-      render:{
+      render: {
         css: {
-          template: './gulp/templates/sprite.css' //this file consists of template showing the positions of each icon
+          template: './gulp/templates/sprite.css'
         }
       }
     }
@@ -30,9 +42,16 @@ gulp.task('createSprite', ['beginClean'], function() {
     .pipe(gulp.dest('./app/temp/sprite/'));
 });
 
+// create png copies of svg files
+gulp.task('createPngCopy', ['createSprite'], function(){
+  return gulp.src('./app/temp/sprite/css/*.svg')
+      .pipe(svg2png())
+      .pipe(gulp.dest('./app/temp/sprite/css'));
+});
+
 //moves the sprite.svg file from  app/temp/sprite to app/assets/images
-gulp.task('copySpriteGraphic', ['createSprite'], function() {
-  return gulp.src('./app/temp/sprite/css/**/*.svg')
+gulp.task('copySpriteGraphic', ['createPngCopy'], function() {
+  return gulp.src('./app/temp/sprite/css/**/*.{svg,png}')
     .pipe(gulp.dest('./app/assets/images/sprites'));
 });
 
@@ -48,4 +67,4 @@ gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function() {
 });
 
 //when executed it runs the stated tasks in order
-gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']);
+gulp.task('icons', ['beginClean', 'createSprite', 'createPngCopy', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']);

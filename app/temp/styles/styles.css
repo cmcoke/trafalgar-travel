@@ -1767,97 +1767,100 @@ hr{
   }
   }
 .icon{
-      background-image: url('/assets/images/sprites/sprite-061ee318.svg');
+      background-image: url('/assets/images/sprites/sprite-2e8a3479.svg');
+    }
+.no-svg .icon{
+      background-image: url('../../assets/images/sprites/sprite-2e8a3479.png');
     }
 .icon--address {
-    width: 27.6px;
-    height: 27.6px;
-    background-position: 35.550113036925396% 33.27894327894328%;
+    width: 29.6px;
+    height: 29.6px;
+    background-position: 36.23802505526898% 34.766146993318486%;
   }
 .icon--car {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 29.502762430939228% 69.37457044673539%;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 29.60172228202368% 70.10206297502714%;
   }
 .icon--cruise {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 59.005524861878456% 69.37457044673539%;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 59.20344456404736% 70.10206297502714%;
   }
 .icon--expedia {
-    width: 91.99px;
-    height: 26px;
+    width: 93.99px;
+    height: 28px;
     background-position: 0 0;
   }
 .icon--facebook {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 29.502762430939228% 99.95876288659794%;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 29.60172228202368% 99.96091205211727%;
   }
 .icon--flight {
-    width: 66.75px;
-    height: 65.75px;
-    background-position: 0 39.06955530216648%;
+    width: 68.75px;
+    height: 67.75px;
+    background-position: 0 40.501621621621624%;
   }
 .icon--instagram {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 70.16132596685082% 0;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 70.07104413347686% 0;
   }
 .icon--love {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 70.16132596685082% 30.584192439862544%;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 70.07104413347686% 29.85884907709012%;
   }
 .icon--mail {
-    width: 27.6px;
-    height: 27.6px;
-    background-position: 25.15071590052751% 33.27894327894328%;
+    width: 29.6px;
+    height: 29.6px;
+    background-position: 25.331613854089905% 34.766146993318486%;
   }
 .icon--map {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 40.658563535911604% 0;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 40.469321851453174% 0;
   }
 .icon--orbitz {
-    width: 91.99px;
-    height: 18px;
-    background-position: 0 9.737827715355806%;
+    width: 93.99px;
+    height: 20px;
+    background-position: 0 10.03584229390681%;
   }
 .icon--plane-ticket {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 99.66408839779005% 0;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 99.67276641550053% 0;
   }
 .icon--support {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 99.66408839779005% 30.584192439862544%;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 99.67276641550053% 29.85884907709012%;
   }
 .icon--ticket {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 99.66408839779005% 61.16838487972509%;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 99.67276641550053% 59.71769815418024%;
   }
 .icon--travelocity {
-    width: 91.99px;
-    height: 27.66px;
-    background-position: 0 17.098002642418592%;
+    width: 93.99px;
+    height: 29.66px;
+    background-position: 0 17.82134105591446%;
   }
 .icon--tripadvisor {
-    width: 91.99px;
-    height: 14px;
-    background-position: 0 26.44280442804428%;
+    width: 93.99px;
+    height: 16px;
+    background-position: 0 27.441696113074205%;
   }
 .icon--twitter {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 0 69.37457044673539%;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 0 70.10206297502714%;
   }
 .icon--villa {
-    width: 66.75px;
-    height: 66.75px;
-    background-position: 0 99.95876288659794%;
+    width: 68.75px;
+    height: 68.75px;
+    background-position: 0 99.96091205211727%;
   }
 .svg-icons{
   display: block;
